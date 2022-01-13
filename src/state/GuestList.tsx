@@ -18,6 +18,11 @@ const GuestList: React.FC = () => {
 	return (
 		<div>
 			<h3>Guest List</h3>
+			<ul>
+				{guests.map((guest) => ( //Goes over the guests-array and renders a list-component for each
+					<li key={guest}>{guest}</li>
+				))}
+			</ul>
 			<input value={name} onChange={(event) => setName(event.target.value)} />
 			<button onClick={onClick}>Add Guest</button>
 		</div>
