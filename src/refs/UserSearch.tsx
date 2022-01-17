@@ -1,4 +1,4 @@
-import { useState, useRef, useReducer, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const users = [
 	{ name: "David", age: 23 },
